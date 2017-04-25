@@ -1,0 +1,9 @@
+<!ELEMENT medicine_list (medicine*)>
+<!ELEMENT medicine (name,price,dosage,visual)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT dosage (#PCDATA)>
+<!ELEMENT visual (color,body,indications)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT indications (#PCDATA)>

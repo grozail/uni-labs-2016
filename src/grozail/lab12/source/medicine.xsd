@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name = "medicine_list">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="medicine" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="name" type="xs:string"/>
+                        <xs:element name="price" type="xs:decimal"/>
+                        <xs:element name="dosage" type="xs:decimal"/>
+                        <xs:element name="visual" maxOccurs="1">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="color" type="xs:string"/>
+                                    <xs:element name="body" type="xs:string"/>
+                                    <xs:element name="indications" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
